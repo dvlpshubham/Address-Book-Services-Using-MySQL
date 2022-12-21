@@ -73,3 +73,30 @@ mysql> desc AddressBook;
 | email       | varchar(100) | NO   |     | NULL    |       |
 +-------------+--------------+------+-----+---------+-------+
 8 rows in set (0.13 sec)
+
+
+
+//UC3 inserting new Contacts to AddressBook table
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('ashvini','kanojia','abcd','jabalpur','mp',482001,919691674007,'kanojia.avi@gmail.com');
+Query OK, 1 row affected (0.10 sec)
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('tarun','khatri','efgh','amritsar','punjab',482002,9176269436775,'tarun5@gmail.com');
+Query OK, 1 row affected (0.24 sec)
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('vivek','mehta','pqrs','jaipur','rajasthan',482003,919179547325,'vivekm@gmail.com');
+Query OK, 1 row affected (0.19 sec)
+
+mysql> insert into AddressBook(firstname,lastname,address,city,state,zip,phonenumber,email) values('someshwar','baghel','wxyz','raipur','chattisgarh',482004,918602203308,'somb@gmail.com');
+Query OK, 1 row affected (0.19 sec)
+
+mysql> select * from Addressbook;
++-----------+------------+----------+-----------+---------------+----------+-------------+-----------------------+
+| firstname | lastname   | address  | city      | state         | zip      | phonenumber | email                  |
++-----------+------------+----------+-----------+---------------+----------+-------------+-----------------------+
+| ashvini   | kanojia    | abcd     | jabalpur  | mp            |   482001 |  919691674007 | kanojia.avi@gmail.com|
+| tarun     | khatri     | efgh     | amritsar  | punjab        |   482002 |  916269436775 | tarun5@gmail.com     |
+| vivek     | mehta      | pqrs     | jaipur    | rajasthan     |   482003 |  919179547325 | vivekm@gmail.com     |
+| someshwar | baghel     | wxyz     | raipur    | chattisgarh   |   482004 |  918602203308 | somb@gmail.com       |
++-----------+------------+----------+-----------+---------------+----------+-------------+-----------------------+
+------------------------------------------------------------------------------------------------------
