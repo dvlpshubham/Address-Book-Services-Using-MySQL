@@ -120,3 +120,22 @@ mysql> select * from Addressbook;
 +-----------+------------+----------+-----------+---------------+----------+-------------+-----------------------+
 4 rows in set (0.01 sec)
 --------------------------------------------------------------------------------------------------------
+
+
+
+//UC5 -deleting the contact by their lastname
+
+
+mysql> delete from Addressbook where lastname='khatri';
+Query OK, 1 row affected (0.15 sec)
+
+mysql> select * from Addressbook;
++-----------+------------+----------+-----------+---------------+----------+-------------+-----------------------+
+| firstname | lastname   | address  | city      | state         | zip      | phonenumber | email                  |
++-----------+------------+----------+-----------+---------------+----------+-------------+-----------------------+
+| ashvini   | kano       | abcd     | jabalpur  | mp            |   482001 |  919691674007 | kanojia.avi@gmail.com|
+| vivek     | mehta      | pqrs     | jaipur    | rajasthan     |   482003 |  919179547325 | vivekm@gmail.com     |
+| someshwar | baghel     | wxyz     | raipur    | chattisgarh   |   482004 |  918602203308 | somb@gmail.com       |
++-----------+------------+----------+-----------+---------------+----------+-------------+-----------------------+
+3 rows in set (0.02 sec)
+-------------------------------------------------------------------------------------------------------
